@@ -6,8 +6,6 @@ let animal = {
      move : 'different',
 };
 
-let cat = {
-    __proto__ : animal,
-}
+let cat = Object.create(animal);
 
 console.log(cat.move);
